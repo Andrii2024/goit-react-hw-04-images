@@ -14,7 +14,6 @@ export const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -38,7 +37,7 @@ export const App = () => {
 
   const handleSearchSubmit = newQuery => {
     setQuery(newQuery);
-    setPage(1);
+    setPage(+1);
   };
 
   const handleLoadMore = () => {
