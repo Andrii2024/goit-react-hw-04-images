@@ -25,6 +25,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+h2 {
+  position: fixed;
+  top: 56px;
+  left: 25px;
+  padding: 10px;
+}
 
 /*
  * Стили компонента App
@@ -53,8 +59,8 @@ img {
   min-height: 64px;
   padding-right: 24px;
   padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 25px;
+  padding-bottom: 50px;
   color: #fff;
   background-color: #12ad0a;
   background-image: url(../assets/pattern.png);
@@ -112,6 +118,7 @@ img {
 
 .input {
   display: inline-block;
+  margin-left: 10px;
   width: 100%;
   font: inherit;
   font-size: 20px;

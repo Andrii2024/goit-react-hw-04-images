@@ -14,7 +14,7 @@ export const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -23,7 +23,7 @@ export const App = () => {
         const data = await fetchPosts({ q: query, page });
         setImages(prevImages => [...prevImages, ...data.hits]);
       } catch (error) {
-        setError(error);
+        console.log(error);
       } finally {
         setLoading(false);
       }
