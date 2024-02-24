@@ -24,9 +24,9 @@ export const Searchbar = ({ onSubmit }) => {
 
   return (
     <header className={styles.searchbar}>
+      {query && !error && <h2>Now you search: {query}</h2>}
+      {error && <h2>Something went wrong!! Try again</h2>}
       <form className={styles.form} onSubmit={handleSubmit}>
-        {query && <h2>Now you search: {query}</h2>}
-        {error && <h2>Something went wrong!! Try again</h2>}
         <button type="submit" className={styles.button}>
           <span className={styles.buttonLabel}>Search</span>
         </button>
